@@ -1,9 +1,6 @@
 # Device Inventory API (Java • Spring Boot)
 
-![CI](https://github.com/pratikpande87/device-inventory-api/actions/workflows/ci.yml/badge.svg)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-
-A beginner-friendly REST API to manage a small **device inventory**, inspired by EMS/NMS workflows.  
+A REST API to manage a small **device inventory**, inspired by EMS/NMS workflows.  
 Built with **Java 17, Spring Boot 3, Gradle, JPA (H2), Swagger/OpenAPI**.
 
 ---
@@ -94,3 +91,7 @@ curl -X DELETE http://localhost:8080/api/devices/1
 
 📸 Swagger UI Screenshot
 ![Swagger UI](docs/swagger-ui.png)
+
+
+![CI](https://github.com/pratikpande87/device-inventory-api/actions/workflows/ci.yml/badge.svg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
