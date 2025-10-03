@@ -61,7 +61,7 @@ git remote add origin https://github.com/USERNAME/device-inventory-api.git
 git push -u origin main
 ```
 
-![CI](https://github.com/<YOUR_USERNAME>/device-inventory-api/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/pratikpande87/device-inventory-api/actions/workflows/ci.yml/badge.svg)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 **Live Docs:** http://localhost:8080/swagger-ui.html  
