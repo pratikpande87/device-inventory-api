@@ -30,7 +30,6 @@ Built with **Java 17, Spring Boot 3, Gradle, JPA (H2), Swagger/OpenAPI**.
 
 ---
 
-![Swagger UI](docs/swagger-ui.png)
 
 ## 🔧 Quickstart
 
@@ -44,5 +43,54 @@ gradle test
 
 # Start the app
 gradle bootRun
+```
+
+Visit:
+
+Swagger UI: http://localhost:8080/swagger-ui.html
+H2 Console (optional): http://localhost:8080/h2-console
 
 
+Create a Device
+```bash
+curl -X POST http://localhost:8080/api/devices \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "Core Router",
+    "serialNumber": "SN-123",
+    "type": "router",
+    "status": "ONLINE",
+    "ipAddress": "10.0.0.1"
+  }'
+```
+
+List Devices
+```bash
+curl http://localhost:8080/api/devices/1
+```
+
+Get Device by ID
+```bash
+curl http://localhost:8080/api/devices/1
+```
+
+Update Device
+```bash
+curl -X PUT http://localhost:8080/api/devices/1 \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "Core Router",
+    "serialNumber": "SN-123",
+    "type": "router",
+    "status": "MAINTENANCE",
+    "ipAddress": "10.0.0.1"
+  }'
+```
+
+Delete Device
+```bash
+curl -X DELETE http://localhost:8080/api/devices/1
+```
+
+📸 Swagger UI Screenshot
+![Swagger UI](docs/swagger-ui.png)
