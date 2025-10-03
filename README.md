@@ -61,8 +61,8 @@ git remote add origin https://github.com/USERNAME/device-inventory-api.git
 git push -u origin main
 ```
 
-## CI (GitHub Actions)
-On every push, CI runs `gradle build test` on Java 17.
+![CI](https://github.com/<YOUR_USERNAME>/device-inventory-api/actions/workflows/ci.yml/badge.svg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-## License
-MIT
+**Live Docs:** http://localhost:8080/swagger-ui.html  
+**Stack:** Java 17 · Spring Boot 3 · Spring Data JPA · H2 · OpenAPI · Gradle · JUnit/MockMvc · GitHub Actions
