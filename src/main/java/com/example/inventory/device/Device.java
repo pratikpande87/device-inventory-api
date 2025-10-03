@@ -23,7 +23,7 @@ public class Device {
     @Pattern(regexp = "ONLINE|OFFLINE|MAINTENANCE", message = "status must be ONLINE, OFFLINE, or MAINTENANCE")
     private String status = "OFFLINE";
 
-    @Pattern(regexp = "^$|^(?:[0-9]{1,3}\.){3}[0-9]{1,3}$", message = "ipAddress must be a valid IPv4 address")
+    @Pattern(regexp = "^$|^(?:[0-9]{1,3}\\.){3}[0-9]{1,3}$", message = "ipAddress must be a valid IPv4 address")
     private String ipAddress;
 
     // Getters and setters
