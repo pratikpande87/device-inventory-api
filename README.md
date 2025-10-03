@@ -30,6 +30,8 @@ Built with **Java 17, Spring Boot 3, Gradle, JPA (H2), Swagger/OpenAPI**.
 
 ---
 
+![Swagger UI](docs/swagger-ui.png)
+
 ## 🔧 Quickstart
 
 ```bash
@@ -43,4 +45,4 @@ gradle test
 # Start the app
 gradle bootRun
 
-![Swagger UI](docs/swagger-ui.png)
+
